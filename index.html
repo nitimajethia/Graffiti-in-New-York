@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Graffiti in New York City</title>
+</head>
+
+<body>
+
+<div class="container">
+<h1 class="h1-container">
+    The prevalence and persistence of graffiti in New York City
+</h1>
+<h3>Graffiti — some call it self expression, while others call it vandalism. In a city that has debated the line between these terms often, the discourse is never-ending. But how much graffiti does New York City really grapple with? </h3>
+<div class="byline">
+<p>By Niti Majethia</p>
+<span><p>November 30, 2023</p></span>
+</div>
+</div>
+<figure class="top-photo">
+<img class="main_img" src="images/graffiti.jpg">
+<figcaption class="head-photo"> Graffiti on 200 west 88 street, mentioned in Gale Brewer’s letter. <span class="credit">Credit: Niti Majethia</span></a></figcaption>
+</figure>
+<div class="container">
+<p class="intro">Gale Brewer, an Upper West Side Council Member, wrote a letter addressed to various city departments in September, sharing a survey her office conducted in July 2023 that identified areas on the Upper West Side that were ‘vandalized’ with graffiti, requesting them to clean it up as soon as possible. She further stated that 17.8% of the graffiti was found on residential and commercial buildings, followed by mailboxes, which took up 9.5%. </p>
+<br>
+<p>
+“I wouldn’t allow a tag to survive a day on my building,” said Queens-based graffiti artist Lady Pink. “There are places for real graffiti. Not where people live, but in the industrial areas and on freight trains. That’s where you can get out your angst, and have your rebellious streak,” she explained. To fully understand the prevalence of graffiti in New York City, the NYC Open Data system was used to find the top 3 districts in each borough with the most graffiti complaints.
+</p> 
+<br>
+<p>
+<iframe title="Top 3 community districts with graffiti complaints in each NYC borough" aria-label="Bar chart" id="datawrapper-chart-DccV6" src="https://datawrapper.dwcdn.net/DccV6/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="539" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+</p>
+<br>
+<p>Here is a table that states which neighborhoods fall under each Community District.</p>
+<p>
+<iframe title="Community Districts and the neighborhoods they cover" aria-label="Table" id="datawrapper-chart-2Pkqr" src="https://datawrapper.dwcdn.net/2Pkqr/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1128" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+</p>
+</div>
+<div class="container">
+<div class="sourcelist">
+<ol>
+    <p>Source list:</p>
+<p><a href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/explore/query/SELECT%0A%20%20count%28%60unique_key%60%29%20AS%20%60count_unique_key%60%2C%0A%20%20%60borough%60%2C%0A%20%20%60community_board%60%0AWHERE%0A%20%20caseless_one_of%28%60complaint_type%60%2C%20%22Graffiti%22%29%0A%20%20AND%20%28%60created_date%60%0A%20%20%20%20%20%20%20%20%20BETWEEN%20%222022-11-01T14%3A42%3A27%22%20%3A%3A%20floating_timestamp%0A%20%20%20%20%20%20%20%20%20AND%20%222023-10-31T14%3A42%3A27%22%20%3A%3A%20floating_timestamp%29%0AGROUP%20BY%20%60community_board%60%2C%20%60borough%60%0AHAVING%20caseless_one_of%28%60borough%60%2C%20%22QUEENS%22%29%0AORDER%20BY%20%60borough%60%20DESC%20NULL%20LAST%2C%20%60count_unique_key%60%20DESC%20NULL%20LAST/page/filter" target=_blank>NYC Open Data "311 graffiti complaints per borough"</a>
+</p>
+<p>Graffiti artist Lady Pink</p>
+<br>
+</ol>
+</div>
+</div>
+</body>
+</html>
